@@ -173,10 +173,10 @@ private static void SapXepTheoDiem() {
 			data.addAll(data1);
 			for (int i = 0;i < data.size();i++) {
 				if (data.get(i).getFullName().contentEquals(tenBanDau)) {
-					if (tenSua != ".") {
+					if (!tenSua.equals(".")) {
 						data.get(i).setFullName(tenSua);
 					}
-					if (gioiTinh != ".") {
+					if (!gioiTinh.equals(".")) {
 						data.get(i).setSex(gioiTinh);
 					}
 					if (tuoi2 != -1) {
